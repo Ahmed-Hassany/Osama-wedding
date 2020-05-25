@@ -1,0 +1,78 @@
+body{
+    background-color: #202228;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+    display: block;
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+  }
+  
+
+.forMen{
+    width: 90%;
+    text-align: center;
+    background-color: #202228;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.forMen img{
+    width: 90%;
+   
+}
+
+.container{
+    position: absolute;
+    width: 80%;
+    padding: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+
+.mandala {
+    animation-name: mandala;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  
+  .hello{
+      width: 60%;
+      margin-bottom: 1rem;
+  }
+
+  .hello img{
+      width: 100%;
+  }
+  @keyframes mandala {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(359deg);
+        opacity: 1;
+    }
+  }
+
+@media (min-width: 768px) {
+    
+    .forMen{
+        width: 40%;
+    }
+        
+    .container{
+        width: 40%;
+    }
+
+  }
